@@ -1,12 +1,60 @@
 body{
-  background: black;
   font-family: 'Montserrat', sans-serif;
 }
 .wrapper{
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 a{
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.bg-welcome {
+    background-image: url(../img/pattern1.png);
+    background-repeat: repeat;
+}
+
+h3{
+  text-transform: capitalize;
+  font-family: Courgette;
+  font-size: 2rem;
+  line-height: 1;
+  color: rgb(212, 5, 5);
+}
+h4{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+p{
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666666;
+  margin: 0;
+}
+
+h5{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.link-arrow a{
+    margin-top: 5%;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }

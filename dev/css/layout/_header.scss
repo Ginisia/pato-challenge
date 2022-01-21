@@ -40,8 +40,9 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
     input {
-      width: 20px;
+      border: 1px;
+      width: 35px;
       margin: 2px;
-      color: #d61c22;
+      accent-color: #d61c22;
         }
 }
