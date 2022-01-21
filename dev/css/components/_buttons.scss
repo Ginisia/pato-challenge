@@ -22,3 +22,26 @@
         }
       }
     }
+
+    .btn-menu {
+    text-align: center;
+    width: 173px;
+    padding: 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: white;
+    border-radius: 0.8rem;
+    opacity: 0.9;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:hover {
+      background: #d61c22;
+      color: white;
+    }
+}
