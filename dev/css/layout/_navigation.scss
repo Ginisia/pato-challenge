@@ -1,9 +1,10 @@
 .nav-bar{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   width: 100%;
   top: 0;
   position: fixed;
-  justify-content: center;
   border-top: 5px solid red;
     .logo-nav{
     display: block;
