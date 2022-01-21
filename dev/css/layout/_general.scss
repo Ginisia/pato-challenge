@@ -1,5 +1,5 @@
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font_base;
 }
 .wrapper{
   max-width: 1200px;
@@ -18,14 +18,14 @@ a{
 
 h3{
   text-transform: capitalize;
-  font-family: Courgette;
+  font-family: $font_two;
   font-size: 2rem;
   line-height: 1;
   color: rgb(212, 5, 5);
 }
 h4{
   margin: 0;
-  font-family: Poppins;
+  font-family: $font_three;
   font-weight: 700;
   font-size: 3.5rem;
   line-height: 1;
@@ -34,7 +34,7 @@ h4{
 }
 
 p{
-  font-family: Montserrat;
+  font-family: $font_base;
   font-weight: 400;
   font-size: 1rem;
   color: #666666;
@@ -42,7 +42,7 @@ p{
 }
 
 h5{
-  font-family: Poppins;
+  font-family: $font_three;
   font-weight: 500;
   font-size: 1.3rem;
   color: #333333;
@@ -52,7 +52,7 @@ h5{
 
 .link-arrow a{
     padding: 10% 0;
-    font-family: Montserrat;
+    font-family: $font_base;
     font-weight: 400;
     font-size: 0.8rem;
     color: #222222;
