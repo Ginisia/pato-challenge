@@ -1,0 +1,24 @@
+.btn-header {
+  margin: 0 auto;
+  width: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+    &:hover {
+      background: #d61c22;
+      color: white;
+    }
+      a{
+        color: #d61c22;
+      &:hover {
+        color: white;
+        }
+      }
+    }
