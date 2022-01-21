@@ -1,6 +1,6 @@
 .nav-bar{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 20% auto 20%;
   gap: 2rem;
   width: 100%;
   top: 0;
@@ -11,7 +11,7 @@
     width: 20%;
   }
   .menu-main {
-    width: 60%;
+    display: flex;
     ul{
     list-style: none;
     display: flex;
