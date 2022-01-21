@@ -60,3 +60,17 @@ h5{
     letter-spacing: 0.1em;
 }
 
+  .slide-top{
+    background-image: url(../img/slide1-01.jpg)center/cover;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+  }
+
+    .txt-center{
+    padding: 50px 0;
+    text-align: center;
+  }
+

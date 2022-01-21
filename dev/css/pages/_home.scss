@@ -62,10 +62,7 @@
 .menu .wrapper{
   display: grid;
   padding-bottom: 10%;
-  .txt-center{
-    padding: 50px 0;
-    text-align: center;
-  }
+
   .menu-links{
     display: grid;
     grid-template-areas: "lunch diner ."
@@ -104,7 +101,31 @@
   div:nth-of-type(6){
     background-image: url(../img/our-menu-16.jpg);
   }
-
   }
   
+}
+
+////////////////////////////////////////////////
+.event{
+  height: 100%;
+  width: 100%;
+  background-image:url(../img/bg-event-01.jpg);
+  padding-bottom: 10%;
+  h4{
+      color: white;
+  }
+  .swiper-ticket{
+    border-radius: 15px;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .img-left{
+      background-image:url(../img/event-01.jpg)
+    }
+    .txt-right{
+    background-color: white;
+    height: 100%;
+    }
+  }
 }
