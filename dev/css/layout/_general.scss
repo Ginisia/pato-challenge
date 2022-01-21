@@ -24,6 +24,7 @@ h3{
   color: rgb(212, 5, 5);
 }
 h4{
+  margin: 0;
   font-family: Poppins;
   font-weight: 700;
   font-size: 3.5rem;
@@ -50,7 +51,7 @@ h5{
 }
 
 .link-arrow a{
-    margin-top: 5%;
+    padding: 10% 0;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 0.8rem;
@@ -58,3 +59,4 @@ h5{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
