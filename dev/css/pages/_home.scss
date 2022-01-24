@@ -19,34 +19,36 @@
 
 ////////////////////////////////////////
 
-.blog-3col .wrapper{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 10% auto;
-  .col{
-    display: flex;
-    flex-direction: column;
-    img{
-      display: block;
-      width: 100%;
-      border-radius: 15px;
-      transition: all 0.5s ease-in-out;
-      &:hover{
-        transform: scale(1.1);
+.blog-3col{
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 5% auto;
+    .col{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 100%;
+        border-radius: 15px;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+          border-radius: 15px;
+        }
       }
-    }
-    h5{
-      margin-bottom: 3%;
+      h5{
+        margin-bottom: 3%;
+      }
     }
   }
 }
-
 /////////////////////////////////////////
 .menu .wrapper{
   display: grid;
-  padding-bottom: 10%;
-  
+  margin-bottom: 5%;
   .menu-links{
     display: grid;
     grid-template-areas: "lunch diner ."
@@ -54,6 +56,7 @@
     "happy happy .";
     grid-auto-rows: calc(200px + 1vw);
     gap: 2rem;
+    padding-top: 3%;
     div{
       position: relative;
       max-width: 100%;
@@ -61,8 +64,6 @@
       transition: all 0.5s ease-in-out;
       background-position: center;
       background-size: cover;
-      display: block;
-      overflow: hidden;
       &:hover{
         transform: scale(1.1);
       }
@@ -99,9 +100,6 @@
   width: 100%;
   background-image:url(../img/bg-event-01.jpg);
   padding-bottom: 10%;
-  .txt-center{
-    margin: 4% auto;
-  }
   h4{
     color: white;
   }
@@ -150,6 +148,12 @@
   .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    .txt-center{
+      padding: 0;
+      h3{
+        margin-top: 0;
+      }
+    }
     form {
       margin-top: 5%;
       width: 100%;
@@ -194,55 +198,56 @@
 
 /////////////////////////////////////////////
 .review{
-  padding-top: 3%;
-.slider-review{
-  padding: 5% 10%;
-  text-align: center;
-  .avatar{
-  display: block;
-  margin: 0 auto;
-  width: 120px;
-  height: 120px;
-  border: 4px solid $color_red;
-  border-radius: 50%;
-  overflow:hidden;
-  background-image: url(../img/avatar-01.jpg);
-  background-size: contain;
-}
-.stars-review{
-  padding: 2%;
-}
-.author{
-  padding-top: 2%;
-  p{
-  font-size: .8rem;
-  text-transform: uppercase;
-  }
-}
-.controls{
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  padding-top: 3%;
-  i{
-    background:grey;
-    color: transparent;
-    display: block;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    transition: .1s ease-in-out;
-    &:hover{
-    width: 13px;
-    height: 13px;
-    background: $color_red;
-    opacity: 1;
-    transition: .1s ease-in-out;
+  .slider-review{
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    .avatar{
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      height: 120px;
+      border: 4px solid $color_red;
+      border-radius: 50%;
+      overflow:hidden;
+      background-image: url(../img/avatar-01.jpg);
+      background-size: contain;
+    }
+    .stars-review{
+      padding: 2%;
+    }
+    .author{
+      padding-top: 2%;
+      p{
+        font-size: .8rem;
+        text-transform: uppercase;
+      }
+    }
+    .controls{
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      padding-top: 3%;
+      i{
+        background:grey;
+        color: transparent;
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        transition: .1s ease-in-out;
+        &:hover{
+          width: 13px;
+          height: 13px;
+          background: $color_red;
+          opacity: 1;
+          transition: .1s ease-in-out;
+        }
+      }
     }
   }
-}
-}
 }
 /////////////////////////////////////////////
 .video{
@@ -262,3 +267,33 @@
   }
 }
 
+/////////////////////////////////////////////////
+.sign{
+  padding: 5%;
+.wrapper{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+  h5{
+    text-align: right;
+  }
+  .input{
+    text-align: center;
+  }
+  input{
+    border: 2px solid $color_grey;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    padding: 20px;
+    color: $color_grey;
+    font-size: .9rem;
+  }
+  .btn-black{
+    margin: 0;
+  }
+  
+}
+}

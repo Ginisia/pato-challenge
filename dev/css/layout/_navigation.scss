@@ -1,5 +1,6 @@
 .nav-bar{
   display: flex;
+  padding-bottom: 2rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -7,10 +8,12 @@
   position: fixed;
   z-index: 3;
   border-top: 5px solid red;
+  background: rgba(255, 255, 255, 0.731);
   .logo, .menu-main, .socials, .burger-menu{
     padding-top: 2%;
   }
   .logo{
+    color: $color_red2;
     display: block;
     text-align: center;
     width: 8%;
@@ -31,7 +34,7 @@
       padding-left: 0;
     }
     a{
-      color: white;
+      color: black;
       font-size: 0.9rem;
       transition: all .3s ease-in-out;
       &:hover{

@@ -11,7 +11,6 @@ body{
   padding: 5% 0;
   .txt-left{
     text-align: center;
-    padding: 3%;
   }
   .img-right{
     display: block;
@@ -49,6 +48,7 @@ h3{
   font-size: 2rem;
   line-height: 1;
   color: $color_red;
+  margin-top: 0;
 }
 h4{
   margin: 0;
@@ -98,10 +98,17 @@ h5{
 
     .txt-center{
     text-align: center;
+    padding: 4rem;
   }
 
   .fa-star{
     color: $color_red;
+  }
+
+  .img-zoom{
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
   }
   
 
