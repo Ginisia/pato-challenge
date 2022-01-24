@@ -27,205 +27,339 @@
             </ul>
         </div>
         <div class="socials">
-            <a href=""><i class="fa fa-tripadvisor"></i></a>
+            <a href=""><i class="fas fa-cat"></i></a>
             <a href=""><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
+            <button class="burger-btn"></button>
         </div>
-        <div class="bg-menu"></div>
+        <div class="window-menu scroller">
+            <div onclick="hasClick()" class="cross-wind">
+                <span class="cross-part"></span>
+                <span class="cross-part"></span>
+            </div>
+            <div class="menu-side">
+                <ul>
+                    <li><a href="#" class="black-links">home</a></li>
+                    <li><a href="#" class="black-links">menu</a></li>
+                    <li><a href="#" class="black-links">gallery</a></li>
+                    <li><a href="#" class="black-links">about</a></li>
+                    <li><a href="#" class="black-links">blog</a></li>
+                    <li><a href="#" class="black-links">contact</a></li>
+                    <li><a href="#" class="btn-red">reservation</a></li>
+                </ul>
+                <div class="gallery-side">
+                    <h5>gallery</h5>
+                    <div class="gallery-links">
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-01.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-02.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-03.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-04.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-05.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-06.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-07.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-08.jpg" alt=""></a>
+                        <a href="" class="item-gallery"><img src="img/photo-gallery-09.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </nav>
     <!--Header moving txt+ img -->
     <header class="header">
+        <input type="radio" name="image" id="item1">
+        <input type="radio" name="image" id="item2">
+        <input type="radio" name="image" id="item3">
+        <div class="slide-item" id="one"></div>  
+        <div class="slide-item" id="two"></div>  
+        <div class="slide-item" id="three"></div>
         <div class="welcome-head">
-            <div class="slide-top">
-                
-            </div>
             <div class="moving-title">
                 <h1>Welcome to</h1>
                 <h2>pato place</h2>
             </div>
             <div class="btn-header"> <a href="#"> look menu </a></div>
-            <div class="i-radio">
-                <input type="radio" name="rad-head">
-                <input type="radio" name="rad-head">
-                <input type="radio" name="rad-head">
-            </div>
+            <nav class="controls">
+                <label for="item1">
+                    <i class="far fa-circle"></i>
+                </label>
+                <label for="item2">
+                    <i class="far fa-circle"></i>
+                </label>
+                <label for="item3">
+                    <i class="far fa-circle"></i>
+                </label>
+            </nav>
         </div>
     </header>
     <main>
         <!--Welcome section-->
-        <section class="welcome bg-welcome">
-                <div class="wrapper">
-                    <div class="txt-left">
-                        <h3>italian restaurant</h3>
-                        <h4>welcome</h4>
-                        <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia,
+        <section class="welcome bg-welcome col-2">
+            <div class="wrapper">
+                <div class="txt-left">
+                    <h3>italian restaurant</h3>
+                    <h4>welcome</h4>
+                    <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia,
                         nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
-                        <a href="" class="link-arrow">Our story<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
+                        <div class="link-arrow"><a href="" class="link-arrow">Our story<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
                     </div>
                     <div class="img-right">
                         <img src="img/our-story-01.jpg" alt="salmon">
                     </div>
                 </div>
-        </section>
-        <!--Discover section-->
-        <section class="discover">
-            <div class="txt-center">
-                <h3>discover</h3>
-                <h4>plato place</h4>
-            </div>
-        </section>
-        <!--Blog section-->
-        <section class="blog-3col">
-            <div class="wrapper">
-                <div class="col">
-                    <a href=""><img src="img/intro-01.jpg" alt=""></a>
-                    <h5>ROMANTIC RESTAURANT</h5>
-                    <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
-                    <div class="link-arrow"><a href="">learn more <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
+            </section>
+            <!--Discover section-->
+            <section class="discover">
+                <div class="txt-center">
+                    <h3>discover</h3>
+                    <h4>plato place</h4>
                 </div>
-                <div class="col">
-                    <a href=""><img src="img/intro-02.jpg" alt=""></a>
-                    <h5>DELICIOUS FOOD</h5>
-                    <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
-                    <div class="link-arrow"><a href="">learn more<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
-                </div>
-                <div class="col">
-                    <a href=""><img src="img/intro-03.jpg" alt=""></a>
-                    <h5>RED WINES YOU</h5>
-                    <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
-                    <div class="link-arrow"><a href="">learn more<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
-                </div>
-            </div>
-        </section>
-        <!--Bloc 2 Menu section-->
-        <section class="menu bg-welcome">
-            <div class="wrapper">
-            <div class="txt-center">
-                <h3>Discover</h3>
-                <h4>Our menu</h4>
-            </div>
-                <div class="menu-links">
-                    <div class="lunch">
-                        <a href="" class="btn-menu">lunch</a>
+            </section>
+            <!--Blog section-->
+            <section class="blog-3col">
+                <div class="wrapper">
+                    <div class="col">
+                        <a href=""><img src="img/intro-01.jpg" alt=""></a>
+                        <h5>ROMANTIC RESTAURANT</h5>
+                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                        <div class="link-arrow"><a href="">learn more <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
                     </div>
-                    <div class="diner">
-                        <a href="" class="btn-menu">dinner</a>
+                    <div class="col">
+                        <a href=""><img src="img/intro-02.jpg" alt=""></a>
+                        <h5>DELICIOUS FOOD</h5>
+                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                        <div class="link-arrow"><a href="">learn more<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
                     </div>
-                    <div class="drinks">
-                        <a href="" class="btn-menu">drinks</a>
-                    </div>
-                    <div class="starters">
-                        <a href="" class="btn-menu">starters</a>
-                    </div>
-                    <div class="happy-hour">
-                        <a href="" class="btn-menu">happy hour</a>
-                    </div>
-                    <div class="dessert">
-                        <a href="" class="btn-menu">desserts</a>
+                    <div class="col">
+                        <a href=""><img src="img/intro-03.jpg" alt=""></a>
+                        <h5>RED WINES YOU</h5>
+                        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                        <div class="link-arrow"><a href="">learn more<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Event section-->
-        <section class="event">
-            <div class="slide-top"></div>
-            <div class="txt-center">
-                <h3>upcomming</h3>
-                <h4>events</h4>
-            </div>
-            <div class="wrapper">
-                <div class="swiper-ticket">
-                    <div class="img-left">
-                        <a href="" class="img-event"></a>
+            </section>
+            <!--Bloc 2 Menu section-->
+            <section class="menu bg-welcome">
+                <div class="wrapper">
+                    <div class="txt-center">
+                        <h3>Discover</h3>
+                        <h4>Our menu</h4>
                     </div>
-                    <div class="txt-right">
-                        <h5>wine during specific nights</h5>
-                        <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia</p>
-                        <a href="" class="link-arrow"></a>
+                    <div class="menu-links">
+                        <div class="img-right">
+                            <a href="" class="btn-menu">lunch</a>
+                        </div>
+                        <div class="diner">
+                            <a href="" class="btn-menu">dinner</a>
+                        </div>
+                        <div class="drinks">
+                            <a href="" class="btn-menu">drinks</a>
+                        </div>
+                        <div class="starters">
+                            <a href="" class="btn-menu">starters</a>
+                        </div>
+                        <div class="happy-hour">
+                            <a href="" class="btn-menu">happy hour</a>
+                        </div>
+                        <div class="dessert">
+                            <a href="" class="btn-menu">desserts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Resa section-->
-        <section class="resa">
-            <div class="form-left">
+            </section>
+            <!--Event section-->
+            <section class="event">
+                <div class="slide-top"></div>
+                <div class="txt-center">
+                    <h3>upcomming</h3>
+                    <h4>events</h4>
+                </div>
+                <div class="wrapper">
+                    <div class="swiper-ticket">
+                        <div class="img-left">
+                            <a href="#" class="img-event">
+                                <div class="red-flag">
+                                    <span>08:00 PM Tuesday - 21 November 2018</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="txt-right">
+                            <h5>wine during specific nights</h5>
+                            <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia</p>
+                            <div class="countdown">
+                                <div class="days"></div>
+                                <div class="hours"></div>
+                                <div class="minutes"></div>
+                                <div class="seconds"></div>
+                            </div>
+                            <div class="link-arrow">
+                                <a href="#">view details
+                                    <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Resa section-->
+            <section class="resa bg-welcome col-2">
+                <div class="wrapper">
+                    <div class="txt-left">
+                        <div class="txt-center">
+                            <h3>reservation</h3>
+                            <h4>book table</h4>
+                        </div>
+                        <form action="booking">
+                            <div class="resa-form">
+                                <div class="col-left col-bloc">
+                                    <div class="date">
+                                        <label for="date">Date</label>
+                                        <input type="text" placeholder="23/01/2022">
+                                    </div>
+                                    <div class="time">
+                                        <label for="time">Time</label>
+                                        <select name="time">
+                                            <option value="09">09:00</option>
+                                            <option value="10">10:00</option>
+                                            <option value="11">11:00</option>
+                                            <option value="12">12:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="people">
+                                        <label for="people">People</label>
+                                        <select id="monselect">
+                                            <option value="valeur1">1 pers</option>
+                                            <option value="valeur2" selected>2 pers</option>
+                                            <option value="valeur3">3 pers</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-right col-bloc">
+                                    <div class="date">
+                                        <label for="date">Name</label>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="time">
+                                        <label for="time">Phone</label>
+                                        <input type="text" placeholder="Phone">
+                                    </div>
+                                    <div class="people">
+                                        <label for="people">Email</label>
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div ><a href="#" class="btn-black">book table</a></div>
+                        </form>
+                    </div>
+                    <div class="img-right">
+                        <img src="img/booking-01.jpg" alt="bookatable">
+                    </div>
+                </div>
+            </section>
+            <!--Review section-->
+            <section class="review">
+                <div class="wrapper">
+                    <div class="txt-center">
+                        <h3>customers says</h3>
+                        <h4>Review</h4>
+                    </div>
+                    <div class="slider-review">
+                        <div class="avatar"></div>
+                        <div class="txt-review">
+                            <p>	“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+                            <div class="stars-review">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="author"><p>marie simmons - new york</p></div>
+                            <nav class="controls">
+                                <label for="item1">
+                                    <i class="far fa-circle"></i>
+                                </label>
+                                <label for="item2">
+                                    <i class="far fa-circle"></i>
+                                </label>
+                                <label for="item3">
+                                    <i class="far fa-circle"></i>
+                                </label>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Video section-->
+            <section class="video">
+                <div class="txt-center">
+                    <h3>discover</h3>
+                    <h4>our video</h4>
+                    <div class="btn-play">
+                        <a href="#">
+                            <div class="inner-wrap">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Blog 2 section-->
+            <section class="blog-3col">
                 <h3></h3>
                 <h4></h4>
-                <div class="resa-form"></div>
-                <div class="btn-black"></div>
-            </div>
-            <div class="img-right"></div>
-        </section>
-        <!--Review section-->
-        <section class="review">
-            <h3></h3>
-            <h4></h4>
-            <div class="swiper-review">
-                <div class="portait"></div>
-                <div class="txt-review"></div>
-            </div>
-        </section>
-        <!--Video section-->
-        <section class="video">
-            <h3></h3>
-            <h4></h4>
-        </section>
-        <!--Blog 2 section-->
-        <section class="blog-3col">
-            <h3></h3>
-            <h4></h4>
-            <div>
-                <img src="" alt="">
+                <div>
+                    <img src="" alt="">
+                    <h5></h5>
+                    <p></p>
+                    <div class="link-arrow"></div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h5></h5>
+                    <p></p>
+                    <div class="link-arrow"></div>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h5></h5>
+                    <p></p>
+                    <div class="link-arrow"></div>
+                </div>
+            </section>
+            <!--SignUp section-->
+            <section class="sign">
                 <h5></h5>
-                <p></p>
-                <div class="link-arrow"></div>
-            </div>
+                <form action=""></form>
+                <div class="btn-black"><a href=""></a></div>
+            </section>
+        </main>
+        <footer>
             <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
-                <div class="link-arrow"></div>
+                <h6>contact us</h6>
             </div>
             <div>
-                <img src="" alt="">
-                <h5></h5>
-                <p></p>
-                <div class="link-arrow"></div>
+                <h6>opening times</h6>
             </div>
-        </section>
-        <!--SignUp section-->
-        <section class="sign">
-            <h5></h5>
-            <form action=""></form>
-            <div class="btn-black"></div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h6>contact us</h6>
-        </div>
-        <div>
-            <h6>opening times</h6>
-        </div>
-        <div>
-            <h6>latest twitter</h6>
-        </div>
-        <div>
-            <h6>gallery</h6>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
-        </div>
-    </footer>
-</body>
-<script src="js/main.min.js"></script>
-</html>
+            <div>
+                <h6>latest twitter</h6>
+            </div>
+            <div>
+                <h6>gallery</h6>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+            </div>
+        </footer>
+    </body>
+    <script src="js/main.min.js"></script>
+    </html>

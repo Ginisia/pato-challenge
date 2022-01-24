@@ -1,5 +1,5 @@
 .btn-header {
-  margin: 0 auto;
+  margin: 5% auto;
   width: 150px;
   padding: 15px;
   border-radius: 10px;
@@ -9,39 +9,129 @@
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 5;
   cursor: pointer;
   transition: .3s all ease-in-out;
+  &:hover {
+    background: $color_red;
+    color: white;
+  }
+  a{
+    color: $color_red;
     &:hover {
-      background: #d61c22;
       color: white;
     }
-      a{
-        color: #d61c22;
-      &:hover {
-        color: white;
-        }
-      }
-    }
+  }
+}
 
-    .btn-menu {
-    text-align: center;
-    width: 173px;
-    padding: 10px;
-    font-family: $font_three;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #333333;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background-color: white;
-    border-radius: 0.8rem;
-    opacity: 0.9;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    &:hover {
-      background: #d61c22;
+.btn-menu {
+  text-align: center;
+  width: 173px;
+  padding: 10px;
+  font-family: $font_three;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: white;
+  border-radius: 0.8rem;
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .4s ease-in-out;
+  &:hover {
+    background: $color_red;
+    color: white;
+  }
+}
+
+.burger-btn {
+  border: none;
+  background: transparent;
+  width: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    border-top: 2px solid $color_red;
+    border-bottom: 2px solid $color_red;
+  }
+}
+
+.btn-red{
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  &:hover{
+    background: $color_red;
+  }
+}
+
+.link-arrow{
+  color:grey;
+  font-size: 1rem;
+  padding: 10%;
+}
+
+.btn-black{
+  display: block;
+  margin: 5% auto;
+  width: 150px;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  &:hover {
+    background: $color_red;
+    color: white;
+  }
+}
+
+.btn-play{
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  .inner-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    background: $color_grey;
+    transition: .3s ease-in-out;
+    color:black;
+    i{
+      width: .9rem;
+    }
+    &:hover{
+      transform: scale(1.1);
+      background-color: rgba(245, 56, 62, 0.5);
       color: white;
     }
+  }
+  
 }

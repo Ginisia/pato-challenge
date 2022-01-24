@@ -1,40 +1,144 @@
 .nav-bar{
-  display: grid;
-  grid-template-columns: 20% auto 20%;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   top: 0;
   position: fixed;
+  z-index: 3;
   border-top: 5px solid red;
-    .logo-nav{
+  .logo, .menu-main, .socials, .burger-menu{
+    padding-top: 2%;
+  }
+  .logo{
     display: block;
-    width: 20%;
+    text-align: center;
+    width: 8%;
   }
   .menu-main {
+    justify-content: center;
+    width: 60%;
     display: flex;
     ul{
-    list-style: none;
-    display: flex;
-    justify-content: center
+      list-style: none;
+      display: flex;
+      justify-content: center
     }
     li{
-      padding-left: 5%;
+      padding-left: 10%;
+    }
+    li:nth-of-type(1){
+      padding-left: 0;
     }
     a{
       color: white;
       font-size: 0.9rem;
+      transition: all .3s ease-in-out;
+      &:hover{
+        color: $color_red;
+      }
     }
   }
   .socials{
-    width: 20%;
+    width: 12%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: end;
     a{
-      padding-right: 10%;
+      padding-right: 20%;
       i{
-    color: white;
-    }
+        color: white;
+        &:hover{
+          color: $color_red;
+        }
+      }
     }
   }
+}
+
+
+.window-menu{
+  position: fixed;
+  width: 26%;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+  line-height: 2.3rem;
+  background: white;
+  padding-top: 5%;
+  transform: translateX(100%);
+  transition: .3s all ease-in-out;
+  &.active{
+    transform: translateX(0);
+  }
+    .menu-side {
+    ul{
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+    .black-links{
+      color: rgb(29, 29, 29);
+      font-size: 0.8rem;
+      transition: all .3s ease-in-out;
+      &:hover{
+        color: $color_red;
+      }
+    }
+    .gallery-side{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+      }
+      .gallery-links{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem 3rem;
+        img{
+          display: block;
+          width: 100%;
+        }
+        a:hover{
+          background-color: $color_red;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
+.cross-wind {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover .cross-part{
+          background: $color_red;
+        }
+    .cross-part{
+      width: 60%;
+      height: 1px;
+      background: black;
+      border-radius: 8px;
+      transition: 0.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      position: absolute;
+      
+    }
+    .cross-part:nth-child(1){
+      transform: rotate(45deg);
+    }
+    .cross-part:nth-child(2){
+      transform: rotate(-45deg);
+    }
+  }
+.scroller {
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
 }
