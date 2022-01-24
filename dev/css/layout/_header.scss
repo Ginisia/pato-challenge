@@ -5,54 +5,68 @@
   text-align: center;
   color: white;
   .slide-item{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: all 0.2s ease-in-out;
-  z-index: -1;
-}
-input{
-  display: none;
-}
-.controls{
-  display: flex;
-  justify-content: center;
-  color: transparent;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  i{
-    display: block;
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin: 2px;
-    opacity: .5;
-    &:hover{
-    border: 2px solid white;
-    background: $color_red;
-    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+  }
+  .contact-head{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/master-slides-08.jpg);
+    h2{
+      color: white;
+      font-size: 4rem;
     }
   }
-}
-#one{
-  background: url(../../img/slide1-01.jpg) center/cover;
-}
-
-#two{
-  background: url(../../img/slide1-02.jpg) center/cover;
-}
-
-#three{
-  background: url(../../img/slide1-03.jpg) center/cover;
-}
-#item1:checked ~ #one,
-#item2:checked ~ #two,
-#item3:checked ~ #three{
-  z-index: 1;
-}
+  
+  input{
+    display: none;
+  }
+  .controls{
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    i{
+      display: block;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      margin: 2px;
+      opacity: .5;
+      &:hover{
+        border: 2px solid white;
+        background: $color_red;
+        opacity: 1;
+      }
+    }
+  }
+  #one{
+    background: url(../../img/slide1-01.jpg) center/cover;
+  }
+  
+  #two{
+    background: url(../../img/slide1-02.jpg) center/cover;
+  }
+  
+  #three{
+    background: url(../../img/slide1-03.jpg) center/cover;
+  }
+  #item1:checked ~ #one,
+  #item2:checked ~ #two,
+  #item3:checked ~ #three{
+    z-index: 1;
+  }
   // background: url(../../img/slide1-01.jpg) center/cover;
 }
 h1{
@@ -68,7 +82,7 @@ h2{
 
 .welcome-head{
   padding: 10% 0;
-
+  
   .moving-title{
     position: relative;
     z-index: 4;
