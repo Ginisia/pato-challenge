@@ -24,6 +24,20 @@
       font-size: 4rem;
     }
   }
+  .blog-head{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-title-page-03.jpg");
+    background-repeat: no-repeat;
+    h2{
+      color: white;
+      font-size: 4rem;
+    }
+  }
   
   input{
     display: none;

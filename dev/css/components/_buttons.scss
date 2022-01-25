@@ -79,10 +79,15 @@
 }
 
 .link-arrow{
+  display: block;
   color:grey;
   font-size: 1rem;
-  padding: 10%;
+  padding-top: 5%;
+  a:hover{
+    color: $color_red2;
+  }
 }
+
 
 .btn-black{
   display: block;
