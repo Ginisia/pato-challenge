@@ -29,11 +29,11 @@
     display: none;
   }
   .controls{
+    position: relative;
     display: flex;
     justify-content: center;
     color: transparent;
-    position: absolute;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     text-align: center;
     i{
@@ -81,15 +81,26 @@ h2{
 }
 
 .welcome-head{
-  padding: 10% 0;
-  
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
   .moving-title{
     position: relative;
     z-index: 4;
     width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
   }
 }
