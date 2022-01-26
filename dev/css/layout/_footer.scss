@@ -23,23 +23,16 @@
       }
     }
   }
-  a{
+  .red-link{
     color: $color_red;
-    opacity: 1;
     text-transform: lowercase;
   }
   .gallery-links-2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    img{
-      display: block;
-      width: 100%;
-    }
-    a:hover{
-      color: $color_red;
-      opacity: 0.3;
-    }
+    position: relative;
+    
   }
   
   .footer-bottom{

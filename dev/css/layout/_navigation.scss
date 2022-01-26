@@ -114,14 +114,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         padding: 1rem 3rem;
-        img{
-          display: block;
-          width: 100%;
-        }
-        a:hover{
-          background-color: $color_red;
-          opacity: 0.3;
-        }
       }
     }
   }
