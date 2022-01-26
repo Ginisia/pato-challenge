@@ -26,8 +26,7 @@
 
 .btn-menu {
   text-align: center;
-  width: 173px;
-  padding: 10px;
+  padding: 25px;
   font-family: $font_three;
   font-weight: 500;
   font-size: 1.2rem;
@@ -41,9 +40,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: .4s ease-in-out;
+  transition: all .6s ease-in-out;
   &:hover {
     background: $color_red;
+    opacity: 0.9;
     color: white;
   }
 }
