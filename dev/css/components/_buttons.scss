@@ -52,8 +52,8 @@
   border: none;
   background: transparent;
   width: 30px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   transition: .3s ease-in-out;
   cursor: pointer;
   &:hover {
@@ -61,9 +61,12 @@
     border-bottom: 2px solid $color_red;
   }
 }
-
+.btn-menu-side{
+  display: block;
+  text-align: center;
+}
 .btn-red{
-  padding: 15px;
+  padding: 4% 8%;
   border-radius: 15px;
   color: white;
   background: rgb(0, 0, 0);
@@ -79,13 +82,18 @@
 }
 
 .link-arrow{
+  font-family: $font_base;
+  letter-spacing: 0.1em;
   display: block;
-  color:grey;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-top: 5%;
-  a:hover{
-    color: $color_red2;
+  a{
+    color:grey;
+    &:hover{
+      color: $color_red2;
+    }
   }
+  
 }
 
 

@@ -1,4 +1,16 @@
-
+.welcome .wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 3%;
+  @media screen and (max-width:770px){
+    display: flex;
+    flex-direction: column;
+  }
+  .txt-left{
+    text-align: center;
+  }
+  
+}
 //////////////////////////////////////////////
 .discover{
   display: grid;
@@ -15,6 +27,7 @@
   h4{
     color: white;
   }
+  
 }
 
 ////////////////////////////////////////
@@ -25,6 +38,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 5% auto;
+    padding: 1.5rem;
+    @media screen and (max-width:770px){
+      display: flex;
+      flex-direction: column;
+    }
     .col{
       display: flex;
       flex-direction: column;
@@ -48,15 +66,26 @@
 /////////////////////////////////////////
 .menu .wrapper{
   display: grid;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
   .menu-links{
     display: grid;
-    grid-template-areas: "lunch diner ."
-    "lunch diner ."
-    "happy happy .";
+    grid-template-areas: "lunch diner drinks"
+    "lunch diner starters"
+    "happy happy desserts";
     grid-auto-rows: calc(200px + 1vw);
     gap: 2rem;
-    padding-top: 3%;
+    padding: 2rem;
+    @media screen and (max-width:770px){
+      grid-template-areas: "lunch diner"
+      "lunch diner"
+      "happy happy"
+      "drinks drinks"
+      "drinks drinks"
+      "starters starters"
+      "starters starters"
+      "desserts desserts"
+      "desserts desserts";
+    }
     .menu-container{
       position: relative;
       max-width: 100%;
@@ -67,6 +96,7 @@
         transition: all .5s ease-in-out;
       }
       .img-link{
+        max-width: 100%;
         width: 100%;
         height: 100%;
         background-position: center;
@@ -75,134 +105,206 @@
       }
     }
     .menu-container:nth-of-type(1){
-        grid-area: lunch;
-        .img-link{
+      grid-area: lunch;
+      .img-link{
         background-image: url(../img/our-menu-01.jpg);
       }
     }
-      .menu-container:nth-of-type(2){
-        grid-area: diner;
-        .img-link{
+    .menu-container:nth-of-type(2){
+      grid-area: diner;
+      .img-link{
         background-image: url(../img/our-menu-05.jpg);
       }
     }
-      .menu-container:nth-of-type(3) .img-link{
+    .menu-container:nth-of-type(3) {
+      grid-area: drinks;
+      .img-link{
         background-image: url(../img/our-menu-08.jpg);
       }
-      .menu-container:nth-of-type(4) .img-link{
+    }
+    .menu-container:nth-of-type(4){
+      grid-area: starters;
+      .img-link{
         background-image: url(../img/our-menu-10.jpg);
       }
-      .menu-container:nth-of-type(5){
-        grid-area: happy;
-        .img-link{
+    } 
+    .menu-container:nth-of-type(5){
+      grid-area: happy;
+      .img-link{
         background-image: url(../img/our-menu-13.jpg);
       }
     }
-      .menu-container:nth-of-type(6) .img-link{
+    .menu-container:nth-of-type(6){
+      grid-area: desserts;
+      .img-link{
         background-image: url(../img/our-menu-16.jpg);
       }
+    } 
   }
   
 }
 
 ////////////////////////////////////////////////
-.event{
-  display: grid;
-  height: 100%;
-  width: 100%;
-  background-image:url(../img/bg-event-01.jpg);
+.event .wrapper{
   padding-bottom: 10%;
   h4{
     color: white;
   }
-}
-.swiper-ticket{
-  height: 400px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  .img-left{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image:url(../img/event-01.jpg);
-    .red-flag{
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
+  .swiper-ticket{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+    @media screen and (max-width:990px){
+      margin: 0 auto;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      position: relative;
-      background-color: $color_red2;
-      font-size: 0.8rem;
-      opacity: .8;
-      color: white;
-      writing-mode: vertical-rl;
-      height: 400px;
-      width: 8%;
+      width: 80%;
+      height: 100%;
+      
     }
-  }
-  .txt-right{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    padding: 5%;
-    background-color: white;
-    height: 100%;
+    .img-left{
+      background-image:url(../img/event-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @media (max-width: 992px){
+        width: 100%;
+        height: 390px
+      }
+      .red-flag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: $color_red2;
+        font-size: 0.8rem;
+        opacity: .8;
+        color: white;
+        writing-mode: vertical-rl;
+        height: 400px;
+        width: 8%;
+        @media (max-width: 992px){
+          writing-mode: horizontal-tb;
+          height: 10%;
+          width: 100%;
+        }
+      }
+    }
+    .txt-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 5%;
+      background-color: white;
+      height: 100%;
+    }
+    .countdown{
+      padding-top: 1rem;
+      height: 30%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
+      div {
+        display: flex;
+        flex-direction: column;
+        span{
+          font-family: $font_base;
+          font-weight: 700;
+          font-size: 50px;
+          color: #ec1d25;
+          line-height: 1.1;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+        strong{
+          opacity: .5;
+        }
+      }
+    }
   }
 }
 
 //////////////////////////////////////////
 
 .resa{
+  padding: 3rem;
   .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    .txt-center{
-      padding: 0;
-      h3{
-        margin-top: 0;
-      }
+    gap: 2rem;
+    @media screen and (max-width:990px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 100%;
+      
     }
-    form {
-      margin-top: 5%;
-      width: 100%;
-      .resa-form{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        .col-bloc div{
-          display: flex;
-          flex-direction: column;
-          margin-top: 5%;
+    .txt-left{
+      .txt-center{
+        padding: 0;
+        h3{
+          margin-top: 0;
         }
-        label{
-          text-align: left;
-          margin-bottom: 3%;
-          font-size: .9rem;
-        }
-        input, select{
-          border: 2px solid $color_grey;
-          border-radius: 10px;
-          height: 30px;
-          width: 250px;
-          padding: 20px;
-          color: $color_grey;
-          font-size: .9rem;
-          &:focus{
-            outline: none;
-            border: 2px solid $color_red;
+      }
+      form {
+        margin-top: 5%;
+        width: 100%;
+        .resa-form{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          @media (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+          }
+          .col-bloc div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+          }
+          label{
+            text-align: left;
+            margin-bottom: 3%;
+            font-size: .9rem;
+          }
+          input, select{
+            border: 2px solid $color_grey;
+            border-radius: 10px;
+            height: 30px;
+            width: 250px;
+            padding: 20px;
+            color: $color_grey;
+            font-size: .9rem;
+            &:focus{
+              outline: none;
+              border: 2px solid $color_red;
+            }
+            @media (max-width: 768px){
+              width: 100%;
+            }
+          }
+          option:hover{
+            background: $color_red;
+            color: #fff;
+          }
+          .col-right input::placeholder {
+            opacity: 0.5;
           }
         }
-        option:hover{
-          background: $color_red;
-          color: #fff;
-        }
-        .col-right input::placeholder {
-          opacity: 0.5;
-        }
+      }
+    }
+    .img-right{
+      img{
+        min-width: 100%;
       }
     }
   }
@@ -280,31 +382,46 @@
 
 /////////////////////////////////////////////////
 .sign{
-  padding: 5%;
-.wrapper{
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2rem;
-  h5{
-    text-align: right;
+  padding: 5% 10%;
+  .wrapper{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    h5{
+      text-align: right;
+    }
+    @media screen and (max-width:990px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5{
+        margin-bottom: 0;
+      }
+    }
+    .input{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fa{
+        color: #666666;
+        transform: translateX(-300%);
+      }
+    }
+    input{
+      border: 2px solid $color_grey;
+      border-radius: 10px;
+      height: 30px;
+      width: 250px;
+      padding: 20px;
+      color: $color_grey;
+      font-size: .9rem;
+    }
+    .btn-black{
+      margin: 0;
+    }
+    
   }
-  .input{
-    text-align: center;
-  }
-  input{
-    border: 2px solid $color_grey;
-    border-radius: 10px;
-    height: 30px;
-    width: 250px;
-    padding: 20px;
-    color: $color_grey;
-    font-size: .9rem;
-  }
-  .btn-black{
-    margin: 0;
-  }
-  
-}
 }

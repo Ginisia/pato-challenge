@@ -1,17 +1,13 @@
 
-.main-contact{
+.main-contact .wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   padding-top: 5%;
-  .map{
-    display: block;
-      margin: 0 auto;
-      width: 800px;
-      height: 400px;
-
-  }
+  max-width: 100%;
+  
+  
   .txt-center {
     padding-bottom: 0;
   }
@@ -21,16 +17,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
+    padding: 3%;
+    width: 100%;
     .row-top{
       width: 100%;
       display: grid;
       align-items: center;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
+      @media (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+      }
       div{
         display: flex;
         flex-direction: column;
+        @media (max-width: 768px){
+          width: 100%;
+        }
       }
     }
     .msg{
@@ -50,7 +54,6 @@
       border: 2px solid $color_grey;
       border-radius: 10px;
       height: 30px;
-      width: 250px;
       padding: 20px;
       color: $color_grey;
       font-size: .9rem;
@@ -63,6 +66,10 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     padding: 6rem 1rem;
+    @media (max-width: 768px){
+      display: flex;
+      flex-direction: column;
+    }
     &>*{
       display: flex;
       justify-content: center;
