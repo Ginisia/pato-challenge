@@ -67,15 +67,15 @@
     }
   }
   #one{
-    background: url(../img/slide1-01.jpg) center/cover;
+    background-image: url("../img/slide1-01.jpg") center/cover;
   }
   
   #two{
-    background: url(../img/slide1-02.jpg) center/cover;
+    background-image: url("../img/slide1-02.jpg") center/cover;
   }
   
   #three{
-    background: url(../img/slide1-03.jpg) center/cover;
+    background-image: url("../img/slide1-03.jpg") center/cover;
   }
   #item1:checked ~ #one,
   #item2:checked ~ #two,
