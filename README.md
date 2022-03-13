@@ -2,7 +2,7 @@
 
 Lien vers le site : https://ginisia.github.io/pato-challenge/prod/
 
-# Pato
+# Pato 🍝
 
 + Restaurant fictif
 + Réalisé solo / en 3 jours (Exam blanc).
